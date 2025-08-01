@@ -6,7 +6,7 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f8ff;
+      background-color: #fff9f0;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -17,19 +17,19 @@
     }
     h1 {
       font-size: 2.5rem;
-      color: #333;
+      color: #444;
     }
     .buttons {
       margin-top: 20px;
     }
     button {
-      padding: 10px 20px;
-      margin: 0 10px;
+      padding: 12px 24px;
+      margin: 0 12px;
       font-size: 1.2rem;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: all 0.3s ease;
     }
     .yes {
       background-color: #4CAF50;
@@ -42,7 +42,7 @@
     .message {
       margin-top: 30px;
       font-size: 1.5rem;
-      color: #555;
+      color: #333;
       max-width: 600px;
     }
   </style>
@@ -57,21 +57,21 @@
     let noCount = 0;
 
     const messages = [
-      "Hey... I know sometimes you feel down, but that doesn't mean you're not good. Try again 💛",
-      "Please don’t be so harsh on yourself. You have a beautiful heart 💖",
-      "I refuse to believe you're not good. You're amazing in ways you don't even see ✨",
-      "Come on now, don’t do this. You're a kind soul, truly 🌈",
-      "Even the stars would vouch for your goodness. Don't doubt it 🌟",
-      "You’ve made someone smile today — maybe even me. You ARE good 😊",
-      "Every 'No' is hurting my heart 😔. Please press Yes...",
-      "Your presence makes this world a better place. You matter ❤",
-      "Not everyone sees their worth — but I see yours clearly 👀💫",
-      "Okay that's it! Press Yes already... because Patli Lendi deserves to know how loved she is 💕"
+      "Oye Patli Lendi, tu sach me 'No' dabayi? 😭 Bhai tera dil toot gaya...",
+      "Mat kar yaar aise... tu hi toh kehti hai ‘kaha gaand mara raha h’ — ab tu hi bata 😩",
+      "Sister se insult mile toh banda seriously doubt karne lagta hai apne upar 😂",
+      "Acha thik hai, maybe I'm not perfect... but teri life me hu na, wo hi kaafi hai 🥹",
+      "Mat dabaya kar 'No', tujhe kya maza aata hai bhai ko rulake 😔",
+      "Tu toh woh hai jo sabke saamne bolti hai ‘Ye mera bhai hai!’ — ab no kaise bol diya 😩",
+      "Teri hassi, tere gaali, sab yaad hai mujhe... ab ek 'Yes' bhi de de behna 🥺",
+      "Jab tu nahi hoti, ghar suna lagta hai... tu toh mera chirping chipkali hai 🦎❤",
+      "Har jagah bolta hu ‘meri Patli Lendi best hai’ — aur tu mujhe badnaam kar rhi h 🥲",
+      "Bas karo behna! Press Yes warna mummy ko bol dunga tu 'No' dabati hai apne bhai ko 😤😂"
     ];
 
     function showYes() {
-      document.getElementById('message').innerHTML = "Thank you so much Patli Lendi 🫶🏻💖 You're truly one of a kind, and I’m lucky to have you.";
-      noCount = 0; // reset
+      document.getElementById('message').innerHTML = "Thank you so much Patli Lendi 🫶🏻💖 You're not just my sister, you're my emotional damage + laughter combo. Love you idiot!";
+      noCount = 0;
     }
 
     function showNo() {
@@ -79,7 +79,7 @@
         document.getElementById('message').innerHTML = messages[noCount];
         noCount++;
       } else {
-        document.getElementById('message').innerHTML = "Okay okay, enough now 😤... Press Yes for Patli Lendi’s sake! ❤";
+        document.getElementById('message').innerHTML = "Tu pagal hai kya? Ab bas bhi kar 😩 — Just press YES for your emotional bhai! 🥺❤";
       }
     }
   </script></body>
