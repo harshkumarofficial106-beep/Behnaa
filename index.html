@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Am I a Good Person?</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .yes {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .no {
+      background-color: #f44336;
+      color: white;
+    }
+    .message {
+      margin-top: 30px;
+      font-size: 1.5rem;
+      color: #555;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Am I a good person?</h1>
+  <div class="buttons">
+    <button class="yes" onclick="showYes()">Yes</button>
+    <button class="no" onclick="showNo()">No</button>
+  </div>
+  <div class="message" id="message"></div>  <script>
+    let noCount = 0;
+
+    const messages = [
+      "Hey... I know sometimes you feel down, but that doesn't mean you're not good. Try again 💛",
+      "Please don’t be so harsh on yourself. You have a beautiful heart 💖",
+      "I refuse to believe you're not good. You're amazing in ways you don't even see ✨",
+      "Come on now, don’t do this. You're a kind soul, truly 🌈",
+      "Even the stars would vouch for your goodness. Don't doubt it 🌟",
+      "You’ve made someone smile today — maybe even me. You ARE good 😊",
+      "Every 'No' is hurting my heart 😔. Please press Yes...",
+      "Your presence makes this world a better place. You matter ❤",
+      "Not everyone sees their worth — but I see yours clearly 👀💫",
+      "Okay that's it! Press Yes already... because Patli Lendi deserves to know how loved she is 💕"
+    ];
+
+    function showYes() {
+      document.getElementById('message').innerHTML = "Thank you so much Patli Lendi 🫶🏻💖 You're truly one of a kind, and I’m lucky to have you.";
+      noCount = 0; // reset
+    }
+
+    function showNo() {
+      if (noCount < messages.length) {
+        document.getElementById('message').innerHTML = messages[noCount];
+        noCount++;
+      } else {
+        document.getElementById('message').innerHTML = "Okay okay, enough now 😤... Press Yes for Patli Lendi’s sake! ❤";
+      }
+    }
+  </script></body>
+</html>
